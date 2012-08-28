@@ -116,11 +116,10 @@
             {
                 if (!comment)
                 {
-                    if (this.values[i].Name == name)
+                    var value = this.values[i].Value;
+                    if (this.values[i].Name == name && value.GetType() == Defaultvalue.GetType())
                     {
-                        var value = this.values[i].Value;
-                        if (Override && value.GetType() == Defaultvalue.GetType()) { value = Defaultvalue; this.values[i].Value = value; }
-                     
+                        if (Override) { value = Defaultvalue; this.values[i].Value = value; }
                         return value;
                     }
                 }
