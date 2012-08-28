@@ -34,79 +34,79 @@
             values = new List<Fvalue>();
         }
         #region Methods
-        public Boolean Check(string name, Boolean Defaultvalue, bool append = false)
+        public Boolean Check(string name, Boolean Defaultvalue, bool append = false,bool  Override = false)
         {
             object d = Defaultvalue;
-            return (Boolean)Check(name, d, append);
+            return (Boolean)Check(name, d, append, Override);
         }
-        public Byte Check(string name, Byte Defaultvalue, bool append = false)
+        public Byte Check(string name, Byte Defaultvalue, bool append = false, bool Override = false)
         {
             object d = Defaultvalue;
-            return (Byte)Check(name, d, append);
+            return (Byte)Check(name, d, append, Override);
         }
-        public Char Check(string name, Char Defaultvalue, bool append = false)
+        public Char Check(string name, Char Defaultvalue, bool append = false, bool Override = false)
         {
             object d = Defaultvalue;
-            return (Char)Check(name, d, append);
+            return (Char)Check(name, d, append, Override);
         }
-        public Decimal Check(string name, Decimal Defaultvalue, bool append = false)
+        public Decimal Check(string name, Decimal Defaultvalue, bool append = false, bool Override = false)
         {
             object d = Defaultvalue;
-            return (Decimal)Check(name, d, append);
+            return (Decimal)Check(name, d, append, Override);
         }
-        public Double Check(string name, Double Defaultvalue, bool append = false)
+        public Double Check(string name, Double Defaultvalue, bool append = false, bool Override = false)
         {
             object d = Defaultvalue;
-            return (Double)Check(name, d, append);
+            return (Double)Check(name, d, append, Override);
         }
-        public Int16 Check(string name, Int16 Defaultvalue, bool append = false)
+        public Int16 Check(string name, Int16 Defaultvalue, bool append = false, bool Override = false)
         {
             object d = Defaultvalue;
-            return (Int16)Check(name, d, append);
+            return (Int16)Check(name, d, append, Override);
         }
-        public Int32 Check(string name, Int32 Defaultvalue, bool append = false)
+        public Int32 Check(string name, Int32 Defaultvalue, bool append = false, bool Override = false)
         {
             object d = Defaultvalue;
-            return (Int32)Check(name, d, append);
+            return (Int32)Check(name, d, append, Override);
         }
-        public Int64 Check(string name, Int64 Defaultvalue, bool append = false)
+        public Int64 Check(string name, Int64 Defaultvalue, bool append = false, bool Override = false)
         {
             object d = Defaultvalue;
-            return (Int64)Check(name, d, append);
+            return (Int64)Check(name, d, append, Override);
         }
-        public SByte Check(string name, SByte Defaultvalue, bool append = false)
+        public SByte Check(string name, SByte Defaultvalue, bool append = false, bool Override = false)
         {
             object d = Defaultvalue;
-            return (SByte)Check(name, d, append);
+            return (SByte)Check(name, d, append, Override);
         }
-        public Single Check(string name, Single Defaultvalue, bool append = false)
+        public Single Check(string name, Single Defaultvalue, bool append = false, bool Override = false)
         {
             object d = Defaultvalue;
-            return (Single)Check(name, d, append);
+            return (Single)Check(name, d, append, Override);
         }
-        public String Check(string name, String Defaultvalue, bool append = false)
+        public String Check(string name, String Defaultvalue, bool append = false, bool Override = false)
         {
             object d = Defaultvalue;
-            return (String)Check(name, d, append);
+            return (String)Check(name, d, append, Override);
         }
-        public UInt16 Check(string name, UInt16 Defaultvalue, bool append = false)
+        public UInt16 Check(string name, UInt16 Defaultvalue, bool append = false, bool Override = false)
         {
             object d = Defaultvalue;
-            return (UInt16)Check(name, d, append);
+            return (UInt16)Check(name, d, append, Override);
         }
-        public UInt32 Check(string name, UInt32 Defaultvalue, bool append = false)
+        public UInt32 Check(string name, UInt32 Defaultvalue, bool append = false, bool Override = false)
         {
             object d = Defaultvalue;
-            return (UInt32)Check(name, d, append);
+            return (UInt32)Check(name, d, append, Override);
         }
 
-        public UInt64 Check(string name, UInt64 Defaultvalue, bool append = false)
+        public UInt64 Check(string name, UInt64 Defaultvalue, bool append = false, bool Override = false)
         {
             object d = Defaultvalue;
-            return (UInt64)Check(name, d, append);
+            return (UInt64)Check(name, d, append, Override);
         }
         #endregion
-        public object Check(string name, object Defaultvalue, bool append = false)
+        public object Check(string name, object Defaultvalue, bool append,bool  Override)
         {
 
 
@@ -118,7 +118,10 @@
                 {
                     if (this.values[i].Name == name)
                     {
-                        return this.values[i].Value;
+                        var value = this.values[i].Value;
+                        if (Override && value.GetType() == Defaultvalue.GetType()) { value = Defaultvalue; this.values[i].Value = value; }
+                     
+                        return value;
                     }
                 }
 
