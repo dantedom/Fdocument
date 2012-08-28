@@ -1,0 +1,5 @@
+C:\Dropbox\personal projects\fred's game farseer\fred's game\fred's game\FDocument\bin\Debug\FDocument.dll
+C:\Dropbox\personal projects\fred's game farseer\fred's game\fred's game\FDocument\bin\Debug\FDocument.pdb
+C:\Dropbox\personal projects\fred's game farseer\fred's game\fred's game\FDocument\obj\Debug\ResolveAssemblyReference.cache
+C:\Dropbox\personal projects\fred's game farseer\fred's game\fred's game\FDocument\obj\Debug\FDocument.dll
+C:\Dropbox\personal projects\fred's game farseer\fred's game\fred's game\FDocument\obj\Debug\FDocument.pdb

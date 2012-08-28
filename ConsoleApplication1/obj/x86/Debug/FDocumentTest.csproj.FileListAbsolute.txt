@@ -1,0 +1,7 @@
+C:\Dropbox\personal projects\fred's game farseer\fred's game\fred's game\FredsGame\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Dropbox\personal projects\fred's game farseer\fred's game\fred's game\FredsGame\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Dropbox\personal projects\fred's game farseer\fred's game\fred's game\FredsGame\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Dropbox\personal projects\fred's game farseer\fred's game\fred's game\FredsGame\ConsoleApplication1\bin\Debug\FDocument.dll
+C:\Dropbox\personal projects\fred's game farseer\fred's game\fred's game\FredsGame\ConsoleApplication1\bin\Debug\FDocument.pdb
+C:\Dropbox\personal projects\fred's game farseer\fred's game\fred's game\FredsGame\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Dropbox\personal projects\fred's game farseer\fred's game\fred's game\FredsGame\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
