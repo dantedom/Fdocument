@@ -114,16 +114,23 @@
             bool comment = IsComment(Defaultvalue);
             for (int i = 0; i < this.values.Count; i++)
             {
+                var value = this.values[i].Value;
                 if (!comment)
                 {
-                    var value = this.values[i].Value;
+
                     if (this.values[i].Name == name && value.GetType() == Defaultvalue.GetType())
                     {
                         if (Override) { value = Defaultvalue; this.values[i].Value = value; }
                         return value;
                     }
                 }
-
+                else
+                {
+                    if (value.GetType() == Defaultvalue.GetType() && Defaultvalue == value)
+                    {
+                        return value;
+                    }
+                }
             }
             if (append)
             {
@@ -353,14 +360,21 @@
                 {
                     if (!IsComment(value))
                     {
-                        items.Add(this.values[i].Name + "=" + value.ToString() + @"(" + value.GetType().Name + @")");
+                        string itemname = this.values[i].Name + "=" + value.ToString() + @"(" + value.GetType().Name + @")";
+
+                        if (!items.Contains(itemname))
+                        {
+                            items.Add(itemname);
+
+                        }
                     }
                     else
                     {
                         string comment = value.ToString();
-
-                        items.Add(comment);
-
+                        if (!items.Contains(comment))
+                        {
+                            items.Add(comment);
+                        }
                     }
                 }
                 else

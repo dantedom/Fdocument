@@ -8,3 +8,8 @@ C:\Dropbox\personal projects\fred's game farseer\fred's game\fred's game\Fdoc\Fd
 C:\Dropbox\personal projects\fred's game farseer\fred's game\fred's game\Fdoc\Fdocument\obj\Debug\ResolveAssemblyReference.cache
 C:\Dropbox\personal projects\fred's game farseer\fred's game\fred's game\Fdoc\Fdocument\obj\Debug\FDocument.dll
 C:\Dropbox\personal projects\fred's game farseer\fred's game\fred's game\Fdoc\Fdocument\obj\Debug\FDocument.pdb
+C:\Dropbox\personal projects\fred's game farseer\fred's game\Fdoc\Fdocument\obj\Debug\ResolveAssemblyReference.cache
+C:\Dropbox\personal projects\fred's game farseer\fred's game\Fdoc\Fdocument\obj\Debug\FDocument.dll
+C:\Dropbox\personal projects\fred's game farseer\fred's game\Fdoc\Fdocument\obj\Debug\FDocument.pdb
+C:\Dropbox\personal projects\fred's game farseer\fred's game\Fdoc\Fdocument\bin\Debug\FDocument.dll
+C:\Dropbox\personal projects\fred's game farseer\fred's game\Fdoc\Fdocument\bin\Debug\FDocument.pdb
